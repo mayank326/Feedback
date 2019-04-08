@@ -1,9 +1,12 @@
 package com.farmerskorner.feedback;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,14 +28,17 @@ public class knowCandidate extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-
+          /*Intent i1=new Intent(Intent.ACTION_VIEW, Uri());
+          startActivity(i1);*/
         candidatesList = new ArrayList<>();
+
+
         candidatesList.add(
                 new Candidates(R.drawable.vijaygoyal,
                         "Vijay Goyal",
                         "Bhartiya Janata Party",
                         R.drawable.bjpicon,
-                        "Click Here"));
+                       "click here"));
 
 
         candidatesList.add(

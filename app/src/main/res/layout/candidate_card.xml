@@ -85,7 +85,10 @@
                     android:textColor="#ADD8E6"
                     android:textSize="18dp"
                     android:layout_marginRight="5dp"
-                    android:layout_marginLeft="10dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:autoLink="web|email"
+                    android:linksClickable="true"
+                    />
 
             </LinearLayout>
         </RelativeLayout>
